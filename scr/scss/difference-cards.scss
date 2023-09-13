@@ -1,0 +1,75 @@
+.difference-cards {
+    padding: 115px 0;
+    @media (max-width: 1255px) {
+        padding: 78px 0;
+    }
+    @media (max-width: 1024px) {
+        padding: 35px 0;
+    }
+}
+
+.difference-cards--wraper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    @media (max-width: 1024px) {
+        display: block;
+    }
+}
+
+.difference-cards--content {
+    margin:0 15px 88px 15px;
+    @media (max-width: 1255px) {
+        margin:0 15px 49px 15px;
+    }
+    &:nth-child(4) {
+        margin-bottom: 0
+    }
+    &:nth-child(5) {
+        margin-bottom: 0
+    }
+    &:nth-child(6) {
+        margin-bottom: 0
+    }
+
+    @media (max-width: 1024px) {
+        margin-bottom: 25px;
+        &:nth-child(4) {
+            margin-bottom: 25px;
+        }
+        &:nth-child(5) {
+            margin-bottom: 25px;
+        }
+        &:nth-child(6) {
+            margin-bottom: 0;;
+        }
+    }
+
+    .difference-cards__image {
+        @include __image;
+        @media (max-width: 1255px) {
+            width: 85px;
+            height: 85px;
+            margin: 0 auto 25px auto;
+        }
+        @media (max-width: 1024px) {
+            margin-bottom: 20px;
+        }
+    }
+    
+    .cards-subtitle {
+        @include subtitle;
+        @media (max-width: 1255px) {
+            margin-bottom: 5px;
+        }
+        @media (max-width: 1024px) {
+            line-height: 26px;
+        }
+    }
+
+    .difference-cards__text-wrap {
+        p {
+            @include p;
+        }
+    }
+}

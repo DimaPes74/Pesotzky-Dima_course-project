@@ -1,0 +1,98 @@
+.person-cards {
+    padding: 114px 0;
+    @media (max-width: 1255px) {
+        padding: 80px 0;
+    }
+    @media (max-width: 1024px) {
+        padding: 35px 0;
+    }
+
+    &--wrapper { 
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0 -10px;
+
+        @media (max-width: 1024px) {
+            display: block;
+            width: 100%;
+            margin: auto;
+        }
+
+        .person-cards__contrnt-wrap {
+            max-width: 270px;
+            margin: 0 10px;
+            @media (max-width: 1255px) {
+                max-width: 227px;
+            }
+            @media (max-width: 1024px) {
+                margin: 0 auto 50px auto;
+                max-width: 280px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .person-cards__image {
+            width: 270px;
+            height: 270px;
+            margin-bottom: 30px;
+            @media (max-width: 1255px) {
+                width: 227px;
+                height: 227px;
+                margin-bottom: 25px;
+            }
+            @media (max-width: 1024px) {
+                width: 280px;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .perso-cards__person-info {
+            margin-bottom: 18px;
+        }
+
+        .person-cards__name {
+            @include __name;
+        }
+
+        .person-cards__jobs {
+            @include __jobs;
+        }
+
+        .person-cards__text-wrap {
+            margin-bottom: 38px;
+            p {
+                @include p;
+                text-align: left;
+            }
+        }
+        .person-cards__nav {
+            display: flex;
+            justify-content: start;
+            li {width: 40px;
+                height: 40px;
+                margin-left: 6px;
+                border: 1px solid #C6CBCD;
+                &:first-child {
+                    margin-left: 0;
+                }
+                a {
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                    i {
+                        color: #C6CBCD;
+                        font-size: $_24px;
+                        line-height: 38px;
+                    }
+                }
+            }
+        }
+    }
+}

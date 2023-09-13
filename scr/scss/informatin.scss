@@ -1,0 +1,111 @@
+.information {
+    padding: 71px 0;
+    background-color: #353C65;
+    @media (max-width: 1255px) {
+        padding: 46px 0;
+    }
+    @media (max-width: 1024px) {
+        padding: 36px 0;
+    }
+    &--content-wrap {
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 1024px) {
+            display: block;
+        }
+    }
+
+    &__content {
+        max-width: 370px;
+        @media (max-width: 1024px) {
+            margin: 0 auto 63px auto;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &--subtitle {
+            color: $white;
+            text-align: center;
+            font-size: $_18px;
+            font-weight: 700;
+            line-height: 21px;
+            text-transform: uppercase;
+            @media (max-width: 1024) {
+                font-size: 14px;
+            }
+        }
+
+        &--desk-wrap {
+            margin-top: 29px;
+        }
+
+        &--desk {
+            color: $white;
+            text-align: center;
+            font-size: $_18px;
+            font-weight: 400;
+            line-height: 21px;
+            text-transform: capitalize;
+            display: block;
+            @media (max-width: 1024px) {
+                font-size: 14px;
+            }
+        }   
+
+        &--link-wrap {
+            margin-top: 48px;
+            @media (max-width: 1024) {
+                margin-top: 30px;
+            }
+            ul {
+                display: flex;
+                justify-content: center;
+                li {
+                    width: 39px;
+                    height: 39px;
+                    border: 1px solid #C6CBCD;
+                    margin-left: 26px;
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                    @media (max-width: 1024px) {
+                        width: 33px;
+                        height: 33px;
+                        margin-left: 16px;
+                        &:first-child {
+                            margin-left: 0;
+                        }
+                    }
+                    a {
+                        display: block;
+                        width: 100%;
+                        text-align: center;
+                        i {
+                            color: #C6CBCD;
+                            font-size: $_24px;
+                            line-height: 38px;
+                            @media (max-width: 1024px) {
+                                line-height: 32px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &--text-wrap {
+            margin-top: 29px;
+            p {
+                color: $white;
+                text-align: center;
+                font-size: $_18px;
+                font-weight: 400;
+                text-transform: capitalize;
+                @media (max-width: 1024px) {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
