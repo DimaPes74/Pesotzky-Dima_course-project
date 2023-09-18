@@ -136,46 +136,6 @@
         transform: translate(0, 0);
     }
 
-
-//  Первый неправильный вариант 
-    
-    //     position: absolute;
-    //     z-index: 100;
-    //     top: 70px;
-    //     left: 0;
-    //     height: 95%;
-    //     width: 100%;
-    //     background-image: url(../img/img-header.png);
-    //     transform: translate(0, -150%);
-    //     transition: 5s;
-    //     &::after {
-    //         content: '';
-    //         top: 0;
-    //         left: 0;
-    //         background-color: rgba(37, 43, 73, 0.8);
-    //         position: absolute;
-    //         width: 100%;
-    //         height: 100%;
-    //     }
-    //     ul {
-    //         position: relative;
-    //         z-index: 5;
-    //         li {
-    //             margin-left: 20px;
-    //             a {
-    //                 color: #FFF;
-    //                 font-size: 13px;
-    //                 font-weight: 700;
-    //                 line-height: 63px;
-    //                 text-transform: uppercase;
-    //             }
-    //         }
-    //     }
-    // }
-    // #header-active-box__menu-burger {
-    //     transform: translate(0, 0);
-    // }
-
     &-active-box-right {
         ul {
             width: 670px;
