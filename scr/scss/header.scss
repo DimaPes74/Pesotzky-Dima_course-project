@@ -197,23 +197,10 @@
         line-height: normal;
     }
     
-    &-button {
-        color: $white;
-        text-align: center;
-        font-size: $_24px;
-        font-weight: 900;
-        text-transform: uppercase;
+    .header-link {
         width: 370px;
         height: 80px;
-        background-color: $green;
-        display: block;
         margin: auto;
-        &:hover {
-            background-color: $red;
-        }
-        &:active {
-            box-shadow: 0 0 20px rgba(0,0,0,0.5);
-        }
         @media (max-width: 1255px) {
             width: 314px;
             height: 80px;
@@ -221,6 +208,23 @@
         @media (max-width: 1024px) {
             width: 280px;
             height: 60px;
+        }
+    }
+
+    .header-link a {
+        color: $white;
+        text-align: center;
+        font-size: $_24px;
+        font-weight: 900;
+        text-transform: uppercase;
+        background-color: $green;
+        display: block;
+        line-height: 80px;
+        &:hover {
+            background-color: $red;
+        }
+        &:active {
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
         }
     }
 }

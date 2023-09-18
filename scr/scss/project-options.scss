@@ -42,10 +42,10 @@
             display: none;
         }
 
-        .project-options--subtitle {
+        .project-options--subtitle a {
             @include --subtitle;
         }
-        .project-options--text{
+        .project-options--text a {
             @include --text;
         }
 

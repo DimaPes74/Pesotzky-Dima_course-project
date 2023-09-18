@@ -39,23 +39,31 @@
         }
     }
 
-    &__button {
+    .download-link {
         width: 370px;
         height: 80px;
+        margin: auto;
+        @media (max-width: 1255px) {
+            width: 314px;
+            height: 80px;
+        }
+        @media (max-width: 1024px) {
+            width: 275px;
+            height: 60px;
+        }
+    }
+
+    .download-link a {
         background-color: $green;
         color: $white;
         text-align: center;
-        font-family: Raleway;
         font-size: $_24px;
         font-weight: 900;
         text-transform: uppercase;
         display: block;
-        margin: auto;
-        @media (max-width: 1255px) {
-            width: 314px;
-        }
+        line-height: 80px;
         @media (max-width: 1024px) {
-            width: 275px;
+            line-height: 60px;
         }
         &:hover {
             background-color: $red;

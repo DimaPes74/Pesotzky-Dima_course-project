@@ -16,7 +16,7 @@
     }
 
     &__content {
-        max-width: 370px;
+        width: 370px;
         @media (max-width: 1024px) {
             margin: 0 auto 63px auto;
             &:last-child {
