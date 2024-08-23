@@ -1,6 +1,7 @@
 {
   "name": "pesotzky-dima_course-project",
   "version": "1.0.0",
+  "homepage": "https://dimapes74.github.io/Pesotzky-Dima_course-project/",
   "description": "some text",
   "source": "scr/index.html",
   "scripts": {
